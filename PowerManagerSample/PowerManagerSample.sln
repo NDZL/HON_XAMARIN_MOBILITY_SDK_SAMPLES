@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerManagerSample.Android", "PowerManagerSample\PowerManagerSample.Android\PowerManagerSample.Android.csproj", "{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PowerManagerSample", "PowerManagerSample\PowerManagerSample\PowerManagerSample.shproj", "{B79AE871-817E-4392-B95B-880FF3D64CF6}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PowerManagerSample\PowerManagerSample\PowerManagerSample.projitems*{942a343d-5fa5-4bae-a8ef-13daf1adec71}*SharedItemsImports = 4
+		PowerManagerSample\PowerManagerSample\PowerManagerSample.projitems*{b79ae871-817e-4392-b95b-880ff3d64cf6}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942A343D-5FA5-4BAE-A8EF-13DAF1ADEC71}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FC5D4BF-47B0-4BD8-95B9-32606B8008B6}
+	EndGlobalSection
+EndGlobal

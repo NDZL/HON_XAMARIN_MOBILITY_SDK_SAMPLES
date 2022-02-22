@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SystemConfigManagerSample"
+             x:Class="SystemConfigManagerSample.MainPage"
+             Title="System Configuration Manager">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="LabelNITZ" Text="NITZ" FontSize="Small" Margin="5,0,0,0"/>
+                    <Switch x:Name="SwitchNITZEnabled" Toggled="SwitchNITZEnabled_Toggled"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0" x:Name="EntrySystemProperty" FontSize="Small" HorizontalOptions="FillAndExpand"/>
+                <Button Grid.Column="1" x:Name="ButtonSystemProperty"  Text="Get System Property" FontSize="Micro"  HorizontalOptions="FillAndExpand" Clicked="ButtonSystemProperty_Clicked"/>
+            </Grid>
+            <Editor Grid.Row="2" x:Name="EditorStatus" BackgroundColor="Gray" FontSize="Micro" TextColor="White"/>
+            <Label Grid.Row="3" x:Name="LabelFileName" Text="File Name:" FontSize="Small" Margin="5,0,0,0"/>
+            <Entry Grid.Row="4" Grid.Column="0" x:Name="EntryFileName" FontSize="Small" HorizontalOptions="FillAndExpand"/>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="ButtonConfigByFile"  Text="Config By File" FontSize="Micro" HorizontalOptions="Center" Clicked="ButtonConfigByFile_Clicked"/>
+                <Button Grid.Column="1" x:Name="ButtonClear"  Text="Clear" FontSize="Micro" HorizontalOptions="Center" Clicked="ButtonClear_Clicked"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PowerManagerSample"
+             x:Class="PowerManagerSample.MainPage"
+             Title="Power Manager Sample">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Editor Grid.Row="0" x:Name="mEditorStatus" BackgroundColor="Gray" TextColor="White"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" x:Name="mButtonSuspend"  Text="Suspend" HorizontalOptions="Center" Clicked="ButtonSuspend_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" x:Name="mButtonReboot"  Text="Reboot" HorizontalOptions="Center" Clicked="ButtonReboot_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="2" x:Name="mButtonClear"  Text="Clear" HorizontalOptions="Center" Clicked="ButtonClear_Clicked"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
