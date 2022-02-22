@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceManagerSample.Android", "DeviceManagerSample\DeviceManagerSample.Android\DeviceManagerSample.Android.csproj", "{B98718F2-5FF5-4274-BE4B-994C2534DD91}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DeviceManagerSample", "DeviceManagerSample\DeviceManagerSample\DeviceManagerSample.shproj", "{DE02384F-AB21-4486-AD6C-AAE844765750}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DeviceManagerSample\DeviceManagerSample\DeviceManagerSample.projitems*{b98718f2-5ff5-4274-be4b-994c2534dd91}*SharedItemsImports = 4
+		DeviceManagerSample\DeviceManagerSample\DeviceManagerSample.projitems*{de02384f-ab21-4486-ad6c-aae844765750}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B98718F2-5FF5-4274-BE4B-994C2534DD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98718F2-5FF5-4274-BE4B-994C2534DD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98718F2-5FF5-4274-BE4B-994C2534DD91}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B98718F2-5FF5-4274-BE4B-994C2534DD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98718F2-5FF5-4274-BE4B-994C2534DD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98718F2-5FF5-4274-BE4B-994C2534DD91}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AAF94E8-90B7-419D-9BBB-96D978006CC3}
+	EndGlobalSection
+EndGlobal

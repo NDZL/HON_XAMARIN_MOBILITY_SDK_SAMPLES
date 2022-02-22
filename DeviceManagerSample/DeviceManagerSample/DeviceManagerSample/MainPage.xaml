@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DeviceManagerSample"
+             x:Class="DeviceManagerSample.MainPage"
+             Title="Device Manager Sample">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <!--Button input and Touch Input-->
+            <Grid Grid.Row="0" Margin="5">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Horizontal" Grid.Column="0">
+                    <Label x:Name="mEnableKeyInputLabel" Text="Key Input:" />
+                    <Switch x:Name="mEnableKeyInputSwitch" IsToggled="False" Toggled="EnableKeyInputSwitch_Toggled"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Column="1">
+                    <Label x:Name="mEnableTouchInputLabel" Text="Touch Input:" />
+                    <Switch x:Name="mEnableTouchInputSwitch" IsToggled="False" Toggled="EnableTouchInputSwitch_Toggled"/>
+                </StackLayout>
+            </Grid>
+            <Editor Grid.Row="1" x:Name="mInfoEditor" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Row="0" Grid.Column="0" x:Name="mAssetNumberEntry" HorizontalOptions="FillAndExpand"/>
+                <Button Grid.Row="0" Grid.Column="1" x:Name="mAssetNumberButton" Text="Asset Number" FontSize="Micro" HorizontalOptions="FillAndExpand" Clicked="AssetNumberButton_Clicked"/>
+                <Picker Grid.Row="1" Grid.Column="0" x:Name="mHallSensorPicker" HorizontalOptions="FillAndExpand"/>
+                <Button Grid.Row="1" Grid.Column="1" x:Name="mHallSensorButton" Text="Hall Sensor" FontSize="Micro" HorizontalOptions="FillAndExpand" Clicked="HallSensorButton_Clicked" />
+                <Picker Grid.Row="2" Grid.Column="0" x:Name="mTouchProfilePicker" HorizontalOptions="FillAndExpand"/>
+                <Button Grid.Row="2" Grid.Column="1" x:Name="mTouchProfileButton" Text="Active Touch Profile" FontSize="Micro" HorizontalOptions="FillAndExpand" Clicked="mTouchProfileButton_Clicked"/>
+                <Picker Grid.Row="3" Grid.Column="0" x:Name="mWipeDevicePicker" HorizontalOptions="FillAndExpand"/>
+                <Button Grid.Row="3" Grid.Column="1" x:Name="mWipeDeviceButton" Text="Wipe Device" FontSize="Micro" HorizontalOptions="FillAndExpand" Clicked="WipeDeviceButton_Clicked"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="mDeviceInfoButton" Text="Device Info" FontSize="Micro"  HorizontalOptions="Center" Clicked="DeviceInfoButton_Clicked"/>
+                <Button Grid.Column="1" x:Name="mClearButton" Text="Clear" FontSize="Micro" HorizontalOptions="Center" Clicked="ClearButton_Clicked"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems x:Uid="MyToolbarItems">
+        <ToolbarItem x:Name="InfoToolbarItem" Text="Other Features" Order="Secondary" Clicked="OnOtherDeviceFeatures"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>
