@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KeyboardManagerSample"
+             x:Class="KeyboardManagerSample.MainPage"
+             Title="Keyboard Manager Sample">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" x:Name="LabelKey" Text="Key" FontSize="Small" Margin="5,0,0,0"/>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="LabelNewKey" Text="To Key" FontSize="Small" Margin="5,0,0,0"/>
+                <Picker Grid.Row="1" Grid.Column="0" x:Name="PickerKey" />
+                <Picker Grid.Row="1" Grid.Column="1" x:Name="PickerToKey" />
+            </Grid>
+
+            <Label Grid.Row="1" x:Name="LabelActivityName" Text="To Activity" FontSize="Small" Margin="5,0,0,0"/>
+            <Entry Grid.Row="2" x:Name="EntryActivityName" />
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="ButtonMapToKey"  Text="Map To Key" FontSize="Small" HorizontalOptions="Center" Clicked="ButtonMapToKey_Clicked"/>
+                <Button Grid.Column="1" x:Name="ButtonMapToActivity"  Text="Map To Activity" FontSize="Small" HorizontalOptions="Center" Clicked="ButtonMapToActivity_Clicked"/>
+            </Grid>
+            <Editor Grid.Row="4" x:Name="EditorStatus" BackgroundColor="Gray" FontSize="Small" TextColor="White"/>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="ButtonKeyRemappedList"  Text="Map/List" FontSize="Small" HorizontalOptions="Center" Clicked="ButtonKeyRemappedList_Clicked"/>
+                <Button Grid.Column="1" x:Name="ButtonClearKey"  Text="Clear Key" FontSize="Small" HorizontalOptions="Center" Clicked="ButtonClearKey_Clicked"/>
+                <Button Grid.Column="2" x:Name="ButtonClearAll"  Text="Clear All" FontSize="Small" HorizontalOptions="Center" Clicked="ButtonClearAll_Clicked"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems x:Uid="MyToolbarItems">
+        <ToolbarItem x:Name="InfoToolbarItem" Text="Wakeup Key Settings" Order="Secondary" Clicked="OnWakeupKey"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

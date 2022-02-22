@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeripheralManagerSample.Android", "PeripheralManagerSample\PeripheralManagerSample.Android\PeripheralManagerSample.Android.csproj", "{2302352C-C0AA-47FE-B6AD-46457F9521FE}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PeripheralManagerSample", "PeripheralManagerSample\PeripheralManagerSample\PeripheralManagerSample.shproj", "{8943CB9C-949C-424D-A656-31B4FF5AF186}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PeripheralManagerSample\PeripheralManagerSample\PeripheralManagerSample.projitems*{2302352c-c0aa-47fe-b6ad-46457f9521fe}*SharedItemsImports = 4
+		PeripheralManagerSample\PeripheralManagerSample\PeripheralManagerSample.projitems*{8943cb9c-949c-424d-a656-31b4ff5af186}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2302352C-C0AA-47FE-B6AD-46457F9521FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2302352C-C0AA-47FE-B6AD-46457F9521FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2302352C-C0AA-47FE-B6AD-46457F9521FE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2302352C-C0AA-47FE-B6AD-46457F9521FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2302352C-C0AA-47FE-B6AD-46457F9521FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2302352C-C0AA-47FE-B6AD-46457F9521FE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {108DDAA4-7107-4877-BE09-CBC750068DC5}
+	EndGlobalSection
+EndGlobal
