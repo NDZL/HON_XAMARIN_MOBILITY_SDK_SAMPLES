@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryManagerSample.Android", "BatteryManagerSample\BatteryManagerSample.Android\BatteryManagerSample.Android.csproj", "{31D285DF-B0D6-4496-80CA-E47A388D7829}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BatteryManagerSample", "BatteryManagerSample\BatteryManagerSample\BatteryManagerSample.shproj", "{8EF4FC1E-A6F0-47A2-9F8A-E89B5DFE7F42}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		BatteryManagerSample\BatteryManagerSample\BatteryManagerSample.projitems*{31d285df-b0d6-4496-80ca-e47a388d7829}*SharedItemsImports = 4
+		BatteryManagerSample\BatteryManagerSample\BatteryManagerSample.projitems*{8ef4fc1e-a6f0-47a2-9f8a-e89b5dfe7f42}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31D285DF-B0D6-4496-80CA-E47A388D7829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D285DF-B0D6-4496-80CA-E47A388D7829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D285DF-B0D6-4496-80CA-E47A388D7829}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{31D285DF-B0D6-4496-80CA-E47A388D7829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D285DF-B0D6-4496-80CA-E47A388D7829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D285DF-B0D6-4496-80CA-E47A388D7829}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FF6F9AB-EF6F-4D3A-9A62-78718383D907}
+	EndGlobalSection
+EndGlobal

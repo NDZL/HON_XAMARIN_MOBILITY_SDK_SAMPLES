@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BatteryManagerSample"
+             x:Class="BatteryManagerSample.MainPage"
+             Title="Battery Manager Sample">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label  x:Name="BatteryInfoKeyLabel" Grid.Row="0" Grid.Column="0" Text="Battery Info:" VerticalTextAlignment="Center" />
+                <Picker x:Name="mBatteryInfoKeyPicker" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" x:Name="mButtonGetBatteryInfo" Text="Battery Info" HorizontalOptions="Center" Clicked="ButtonGetBatteryInfo_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" x:Name="mButtonClear"  Text="Clear" HorizontalOptions="Center" Clicked="ButtonClear_Clicked"/>
+            </Grid>
+            <Editor Grid.Row="2" x:Name="mEditorStatus" BackgroundColor="Gray" TextColor="White"/>
+        </Grid>
+    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems x:Uid="MyToolbarItems">
+        <ToolbarItem x:Name="InfoToolbarItem" Text="Battery Hot-swap" Order="Secondary" Clicked="OnBatteryHotSwap"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

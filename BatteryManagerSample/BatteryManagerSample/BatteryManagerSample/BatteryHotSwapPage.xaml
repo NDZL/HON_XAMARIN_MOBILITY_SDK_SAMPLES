@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BatteryManagerSample.BatteryHotSwapPage"
+             Title="Battery Hot-swap">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Editor Grid.Row="0" x:Name="mBatteryHotSwapInfo" BackgroundColor="Gray" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button Grid.Row="1" x:FieldModifier="mButtonClear" Text="Clear" HorizontalOptions="CenterAndExpand" Clicked="ButtonClear_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
